@@ -1,13 +1,18 @@
 const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/dados-globais.json'
 
-async function visualizarInformacoesGlobais() {
+async function visualizarInformacoesGlobais(){
+    const res = await fetch (url)
+    const dados = await res.json()
+    const paragrafo = document.createElement('p')
+    paragrafo.classList.add('graficos-container__texto')
+    paragrafo.innerHTML = `Você sabia que o mundo tem
+    ${dados.total_pessoas_mundo} de pessoas e
+    que aproximadamente ${dados.total_pesoas_conectadas}
+    estão conectaas em alguma rede social e passam em média
+    ${dados.tempo_medio} horas conectadas.`
 
-        const res = await fetch(url)
-
-        const dados = await res.json()
-
-        console.log(dados);
-
-    }
+    const container = document.getElementById('graficos-container')
+    container.appendChild(paragrafo)
+}
 
     visualizarInformacoesGlobais()
