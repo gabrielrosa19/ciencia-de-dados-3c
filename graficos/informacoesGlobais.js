@@ -9,7 +9,7 @@ async function visualizarInformacoesGlobais(){
     const pessoasEstudando = ((pessoasComAcesso / pessoasNoMundo) * 100).toFixed(2)
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
-    paragrafo.innerHTML = `Você sabia que o mundo tem ${dados.total_pessoas_mundo} de pessoas e que aproximadamente ${dados.total_pessoas_conectadas} estão conectadas em alguma rede social e passam em média ${dados.tempo_medio} horas conectadas.`
+     paragrafo.innerHTML = `Você sabia que o mundo tem <span>${pessoasNoMundo}</span> bilhões de pessoas e que aproximadamente <span>${pessoasEstudando}%</span> delas estão fazendo algum curso e passam em média <span>${horas} horas</span> estudando?`
     
     const container = document.getElementById('graficos-container')
     container.appendChild(paragrafo)
