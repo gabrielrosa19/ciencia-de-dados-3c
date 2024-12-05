@@ -11,7 +11,7 @@ async function visualizarInformacoesGlobais(){
 
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
-    paragrafo.innerHTML = `Você sabia que o mundo tem <span>${pessoasNoMundo} bilhões</span> de pessoas e que aproximadamente <span>${pessoasTrabalhando} bilhões</span> estão praticando esportes em alguma ocupação e passam em média <span>${horas} horas</span> e <span>${minutos} minutos</span> Praticando esportes.<br>Porém, ainda existe aproximadamente <span>${porcentagemPraticandoEsportes}%</span> de pessoas praticando esportes .`
+    paragrafo.innerHTML = `Você sabia que o mundo tem <span>${pessoasNoMundo} bilhões</span> de pessoas e que aproximadamente <span>${pessoasPraticandoEsporte} bilhões</span> estão praticando esportes em alguma ocupação e passam em média <span>${horas} horas</span> e <span>${minutos} minutos</span> Praticando esportes.<br>Porém, ainda existe aproximadamente <span>${porcentagemPraticandoEsportes}%</span> de pessoas praticando esportes .`
 
     const container = document.getElementById('graficos-container')
     container.appendChild(paragrafo)
