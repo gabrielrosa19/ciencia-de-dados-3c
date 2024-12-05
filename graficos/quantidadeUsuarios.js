@@ -1,5 +1,5 @@
 import { getCSS, tickConfig } from "./common.js"
-async function quantidadeUsuariosPorEsportes.values(dados)
+async function quantidadeUsuariosPorEsportes() {
     const url = https://raw.githubusercontent.com/gabrielrosa19/ciencia-de-dados-3c/refs/heads/main/base-de-dados/esportes-mais-praticados.json
     const res = await fetch(url)
     const dados = await res.json()
@@ -10,7 +10,7 @@ async function quantidadeUsuariosPorEsportes.values(dados)
         {
             x: nomeDosEsportes,
             y: quantidadeDeEsportes,
-            type: 'bar',
+            type: 'quantidadeDeJogadores',
             marker: {
                 color: getCSS('--primary-color')
             }
