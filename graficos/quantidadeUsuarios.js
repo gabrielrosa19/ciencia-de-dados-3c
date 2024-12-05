@@ -17,11 +17,11 @@ async function quantidadeUsuariosPorEsportes() {
         }
     ]
 
-    const laytout = {
+    const layout = {
         plot_bgcolor: getCSS('--bg-color'),
         paper_bgcolor: getCSS('--bg-color'),
         title: {
-            text: 'EsportesComMaisJogadores',
+            text: 'Esportes Com Mais Jogadores',
             x: 0,
             font: {
                 color: getCSS('--primary-color'),
@@ -55,4 +55,4 @@ async function quantidadeUsuariosPorEsportes() {
     Plotly.newPlot(grafico, data, layout)
 }
 
-quantidadeDeEsportes()
+quantidadeUsuariosPorEsportes()
