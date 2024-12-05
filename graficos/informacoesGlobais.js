@@ -3,7 +3,7 @@ const url = 'https://raw.githubusercontent.com/gabrielrosa19/ciencia-de-dados-3c
 async function visualizarInformacoesGlobais(){
     const res = await fetch (url)
     const dados = await res.json()
-    const pessoasPraticandoEsporte = (dados.total_pessoas_que_praticam_esportes_regularmente / 1e9)
+    const pessoasPraticandoEsportes = (dados.total_pessoas_que_praticam_esportes_regularmente / 1e9)
     const pessoasNoMundo = (dados.total_pessoas_mundo / 1e9)
     const horas = parseInt(dados.tempo_medio_semana_praticando_esportes)
     const minutos = Math.round((dados.tempo_medio_semana_praticando_esportes - horas) * 100)
