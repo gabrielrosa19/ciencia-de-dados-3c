@@ -1,4 +1,4 @@
-const url = https://raw.githubusercontent.com/gabrielrosa19/ciencia-de-dados-3c/refs/heads/main/base-de-dados/esportes-dados-globais.json
+const url = 'https://raw.githubusercontent.com/gabrielrosa19/ciencia-de-dados-3c/refs/heads/main/base-de-dados/esportes-dados-globais.json'
 
 async function visualizarInformacoesGlobais(){
     const res = await fetch (url)
@@ -17,4 +17,4 @@ async function visualizarInformacoesGlobais(){
     container.appendChild(paragrafo)
 }
 
-vizualizarInformacoesGlobais()
+visualizarInformacoesGlobais()
