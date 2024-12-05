@@ -1,6 +1,6 @@
 import { getCSS, tickConfig } from "./common.js"
 async function quantidadeUsuariosPorEsportes() {
-    const url = https://raw.githubusercontent.com/gabrielrosa19/ciencia-de-dados-3c/refs/heads/main/base-de-dados/esportes-mais-praticados.json
+    const url = 'https://raw.githubusercontent.com/gabrielrosa19/ciencia-de-dados-3c/refs/heads/main/base-de-dados/esportes-mais-praticados.json'
     const res = await fetch(url)
     const dados = await res.json()
     const nomeDosEsportes = Object.keys(dados)
